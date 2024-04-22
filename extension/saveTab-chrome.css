@@ -1,0 +1,389 @@
+@import url(saveTab.css);
+
+body {
+    width: 25rem;
+    height: 28rem;
+}
+
+
+#buttonContainer{
+    margin-top: 15px;
+    overflow: auto; 
+    max-height: 155px;
+ 
+}
+
+.importContainer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: 30px;
+}
+
+.importButton{
+    margin: 16px;
+}
+
+.export{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.buttonContainer{
+    height: 5rem;
+
+}
+
+
+/** 
+    Navigation Bar
+*/
+.navbar {
+    padding: 0.25rem 0.5rem;
+    width: calc(100% - 1rem);
+}
+
+.navbar .navbar-content {
+    padding: 0.25rem 0.5rem;
+    width: calc(100% - 1rem);
+    border-radius: 0.25rem;
+}
+
+/* Extension Name and Logo */
+.header span {
+    padding-left: 0.25rem;
+    font-size: 1.125rem;
+}
+
+/* Extension Support Links */
+.navbar-content .links {
+    width: 6rem;
+}
+
+.links span svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.export-section, .import-section, .logs-section {
+    padding: 0.25rem;
+}
+
+.export-section {
+    height: 10rem !important
+}
+
+.import-section {
+    /* height: calc(50% - 0.5rem); */
+    height: 214px !important;
+    /* overflow: auto; */
+
+}
+
+.logs-section {
+    /* height: calc(58% - 0.5rem); */
+    display: none;
+}
+
+/* Fieldset */
+fieldset {
+    padding: 0.25rem;
+    height: calc(100% - 0.5rem);
+    border-radius: 0.25rem;
+}
+
+.fieldset-content input#file-name {
+    padding: 0 0.5rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    border-bottom: 0.15rem solid var(--color_A_light_2);
+}
+
+input#file-name:focus {
+    border-bottom: 0.15rem solid var(--color_A);
+}
+
+/* Legend */
+legend {
+    margin-left: 0.25rem;
+    width: calc(100% - 0.5rem);
+    border-radius: 0.25rem;
+}
+
+.legend-left .legend-title,.legend-left .legend-element {
+    padding: 0 0.25rem;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+}
+
+.legend-left .legend-element {
+    margin-left: 0.5rem;
+}
+
+.info .section-info {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.section-info svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Tooltip */
+.tooltip span {
+    right: 150%; 
+    padding: 0.125rem 0.25rem;	
+    border-radius: 0.25rem;
+}
+
+.tooltip span:after {
+    margin-top: -0.5rem;
+    border-width: 0.5rem;
+}
+
+/* Import & Export Button */
+.button {
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+}
+
+.button span {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+/* my styling */
+.buttonX {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    /* width: 10rem;
+    height: 3rem; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    background-color: var(--color_0);
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 220px;
+    word-wrap: break-word;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.buttonX:hover {
+    color: var(--color_0);
+}
+
+.buttonX:hover svg {
+    fill: var(--color_0);
+}
+
+.buttonX,
+.buttonX svg {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonX span {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ------ */
+
+/* same for delete button */
+
+.buttonY {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    /* width: 10rem;
+    height: 3rem; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    background-color: var(--color_0);
+    cursor: pointer;
+}
+
+.buttonY:hover {
+    color: var(--color_0);
+}
+
+.buttonY:hover svg {
+    fill: var(--color_0);
+}
+
+.buttonY,
+.buttonY svg {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonY span {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ---------------- */
+
+span svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.export {
+    border: 0.1rem solid var(--color_A);
+    -webkit-box-shadow: 0 0.125rem 0.125rem var(--color_A_light_2);
+            box-shadow: 0 0.125rem 0.125rem var(--color_A_light_2);
+}
+
+.export:hover {
+    -webkit-box-shadow: 0 0.25rem 0.125rem var(--color_A_light_2);
+            box-shadow: 0 0.25rem 0.125rem var(--color_A_light_2);
+} 
+
+.export:active {
+    -webkit-box-shadow: 0 0 0.125rem var(--color_A_light_2);
+            box-shadow: 0 0 0.125rem var(--color_A_light_2);
+}
+
+.import {
+    border: 0.1rem solid var(--color_B);
+    -webkit-box-shadow: 0 0.125rem 0.125rem var(--color_B_light_2);
+            box-shadow: 0 0.125rem 0.125rem var(--color_B_light_2);
+}
+
+.import:hover {
+    -webkit-box-shadow: 0 0.25rem 0.125rem var(--color_B_light_2);
+            box-shadow: 0 0.25rem 0.125rem var(--color_B_light_2);
+} 
+
+.import:active {
+    -webkit-box-shadow: 0 0 0.125rem var(--color_B_light_2);
+            box-shadow: 0 0 0.125rem var(--color_B_light_2);
+}
+
+/* Logs Section */
+.logs-section fieldset {
+    overflow: hidden;
+}
+
+.fieldset-content .logs {
+    padding: 0.25rem;
+    width: calc(100% - 0.5rem);
+    height: calc(100% - 0.5rem);
+    font-size: 0.8rem;
+}
+
+.logs .log {
+    padding: 0.25rem;
+    width: 21rem;
+}
+
+.meta-data .timestamp {
+    width: 6rem;
+}
+
+.meta-data .status {
+    margin-left: 0.25rem;
+    padding: 0.062rem 0.25rem;
+    font-weight: 500;
+}
+
+/* Log Toggle Button */
+input[type="checkbox"] + label {
+    width: 2rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+input[type="checkbox"] + label:after{
+    top: 0.125rem;
+    left: 0.125rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="checkbox"]:checked + label:after {
+    left: calc(100% - 0.125rem);
+}
+
+input[type="checkbox"] + label:active:after {
+    width: 1.25rem;
+}
+
+/** 
+    Footer
+*/
+.footer {
+    display: none;
+    padding: 0.25rem 0.5rem;
+    width: calc(100% - 1rem);
+}
+
+.footer .footer-content {
+    padding: 0.25rem 0.5rem;
+    width: calc(100% - 1rem);
+    border-radius: 0.25rem;
+}
+
+.footer-content .developer-name {
+    padding: 0 0.125rem;
+    font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color_C_light_2);
+    border-radius: 0.5rem
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: inset 0 0 0.5rem var(--color_C);
+            box-shadow: inset 0 0 0.5rem var(--color_C)
+}
+
+/** 
+    Extras
+*/
+.box-shadow {
+    -webkit-box-shadow: 0 0 0.2rem var(--color_shadow);
+            box-shadow: 0 0 0.2rem var(--color_shadow);
+}
